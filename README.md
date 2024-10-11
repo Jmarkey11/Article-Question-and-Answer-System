@@ -40,7 +40,7 @@ Additionally a BERT **(Bidirectional Encoder Representations from Transformers)*
 - **Model Input**: Converts the tokenized input into **input IDs** and an **attention mask**. These inputs are then fed into the pre-trained model.
 - **Logits Prediction**: The model generates **start logits** and **end logits**, predicting the start and end positions of the answer in the context.
 - **Answer Extraction**: Identifies the tokens with the highest start and end scores, marking the predicted span of the answer, which is then converted back into a string.
-- **Handling Unanswerable Questions**: If the model is unable to find a valid answer, the system returns `None` to indicate that no answer exists.
+- **Handling Unanswerable Questions**: If the model is unable to find a valid answer, the system returns None to indicate that no answer exists.
 
 ## Dataset
 Two datasets were used in this project for development and testing purposes:
